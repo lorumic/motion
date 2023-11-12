@@ -377,12 +377,8 @@ static void webu_html_navbar(struct webui_ctx *webui)
 
     webu_html_navbar_action(webui);
 
-    snprintf(response, sizeof (response),
-        "    <a href=\"https://motion-project.github.io/motion_guide.html\" "
-        " target=\"_blank\">%s</a>\n"
-        "    <p class=\"header-right\">Motion "VERSION"</p>\n"
-        "  </div>\n"
-        ,_("Help"));
+    snprintf(response, sizeof (response),"%s",
+        "  </div>\n");
     webu_write(webui, response);
 
 }
